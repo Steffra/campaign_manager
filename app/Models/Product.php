@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Product extends Model
+{
+    use HasFactory;
+
+    public function campaigns()
+    {
+        return $this->belongsToMany(Campaign::class);
+    }
+
+    public function publicate(){
+        $this->is_publicated = true;
+        $this->save();
+    }
+
+}
