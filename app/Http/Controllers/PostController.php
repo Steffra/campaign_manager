@@ -16,7 +16,7 @@ class PostController extends Controller
 
     public function show(Post $post)
     {
-        return $post->load('campaign');
+        return $post;
     }
 
     public function publicate(Request $request, Post $post)
