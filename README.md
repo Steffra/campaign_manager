@@ -4,7 +4,7 @@ Dockerized implementation of a campaign manager API
 
 ## Description
 - During the initialization process, the database fills up with data to simulate the state of a production application.
-- For testing purposes, a Postman collection can be found in the root of the repository.
+- For testing purposes, a **Postman collection** can be found in the root of the repository.
 - The unit tests can be run with the following command
 - - `docker exec -it campaign_manager_php php artisan test`
 - Keep in mind, that security has not been a top priority during the developement of this application, which is why credentials are not separated well.
