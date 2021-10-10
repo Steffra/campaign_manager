@@ -2,7 +2,7 @@
 
 Dockerized implementation of a campaign manager API
 
-## Prerequisitions
+## Prerequisites
 - Make sure you **have docker installed** on your local machine, you **do not need** to have **php** / **postresql** / node installed on your machine
 
 ## Installation
