@@ -99,9 +99,9 @@ class CampaignController extends Controller
         $campaign->unsetRelation('products');
 
         if(!empty($conflictingCampaigns)){
-            $strErrorMessage = "Couldn't activate the campaign, because the following products are already in another running campaign:" . PHP_EOL;
+            $strErrorMessage = "Couldn't activate the campaign, because the following products are already in another running campaign:" ;
             foreach($conflictingCampaigns as $conflictingCampaign){
-                $strErrorMessage .= $conflictingCampaign['product'] . '(' . $conflictingCampaign['campaign'] . ')' . PHP_EOL;
+                $strErrorMessage .= $conflictingCampaign['product'] . '(' . $conflictingCampaign['campaign'] . '),';
             }
             throw new Exception($strErrorMessage);
         }
@@ -110,7 +110,7 @@ class CampaignController extends Controller
     private function validateInactivation(Campaign $campaign)
     {
         if(!$campaign->is_active){
-            throw new Exception("Can not inactivate an already inactivate campaign!");
+            throw new Exception("Can not inactivate an already inactive campaign!");
         }
     }
 
