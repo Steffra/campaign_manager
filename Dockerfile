@@ -8,4 +8,4 @@ RUN set -ex \
 
 WORKDIR /var/www/html
 
-USER root;
+USER root
