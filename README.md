@@ -7,4 +7,4 @@ Docker development implementation the campaign manager:
 - `cd campaign_manager`
 - Make sure you have docker installed on your local machine, you do not need to have php / mysql / redis / node installed on your machine
 - Run command: `docker-compose up --build -d`
-- Run the initialization steps: `docker exec -it campaign_manager_php composer install && docker exec -it campaign_manager_php php artisan migrate -n && docker exec -it campaign_manager_php php artisan db:seed && docker exec -it campaign_manager_php php artisan key:generate`
+- Run the initialization steps: `docker exec -it campaign_manager_php cp .env.example .env && docker exec -it campaign_manager_php composer install && docker exec -it campaign_manager_php php artisan migrate --force && docker exec -it campaign_manager_php php artisan db:seed --force && docker exec -it campaign_manager_php php artisan key:generate --force`
