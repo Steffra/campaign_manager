@@ -26,7 +26,7 @@ Dockerized implementation of a campaign manager API
 # Endpoints
 These endpoints are available on the `localhost:8000/api` route
 
-# Campaign related endpoints
+## Campaign related endpoints
 
 -  `/campaigns` - **GET** - returns all the campaigns in the database
 -  `/campaign/{id}` - **GET** - returns data of the campaign with the given id
@@ -35,19 +35,19 @@ These endpoints are available on the `localhost:8000/api` route
 -  `/activateCampaign/{id}` - **POST** - activates the given campaign
 -  `/inactivateCampaign/{id}` - **POST** - inactivates the given campaign
 
-# Blogpost related endpoints
+## Blogpost related endpoints
 
 -  `/posts` - **GET** - returns all the campaigns in the database
 -  `/post/{id}` - **GET** - returns data of the post with the given id
 -  `/publicatePost/{id}` - **POST** - publicates the given post
 
-# Coupon related endpoints
+## Coupon related endpoints
 
 -  `/coupons` - **GET** - returns all the coupons in the database
 -  `/coupon/{id}` - **GET** - returns data of the coupon with the given id
 -  `/activateCoupon/{id}` - **POST** - publicates the given coupon
 
-# Product related endpoints
+## Product related endpoints
 
 -  `/products` - **GET** - returns all the products in the database
 -  `/product/{id}` - **GET** - returns data of the product with the given id
