@@ -26,8 +26,8 @@ Dockerized implementation of a campaign manager API
 # Endpoints
 These endpoints are available on the `localhost:8000/api` route
 ## GET
--  `/campaigns` - returns all the campaigns in the database
--  `/campaign/{id}` - returns data of the campaign with the given id
+-  `/campaigns` - *GET* - returns all the campaigns in the database
+-  `/campaign/{id}` - *GET* - returns data of the campaign with the given id
 -  `/approveCampaign/{id}` - approves the given campaign
 -  `/disapproveCampaign/{id}` - disapproves the given campaign
 -  `/activateCampaign/{id}` - activates the given campaign
