@@ -5,6 +5,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN set -ex \
     	&& apk --no-cache add postgresql-dev nodejs yarn npm\
     	&& docker-php-ext-install pdo pdo_pgsql
+		
+RUN apk update && apk add bash
 
 WORKDIR /var/www/html
 
