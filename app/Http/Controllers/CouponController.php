@@ -16,7 +16,7 @@ class CouponController extends Controller
 
     public function show(Coupon $coupon)
     {
-        return response()->json($coupon->load('campaign'), 200);
+        return response()->json($coupon, 200);
     }
 
     public function activate(Request $request, Coupon $coupon)
