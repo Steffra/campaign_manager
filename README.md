@@ -37,9 +37,9 @@ These endpoints are available on the `localhost:8000/api` route
 
 ## Blogpost related endpoints
 
--  `/posts` - **GET** - returns all the campaigns in the database
--  `/post/{id}` - **GET** - returns data of the post with the given id
--  `/publicatePost/{id}` - **POST** - publicates the given post
+-  `/posts` - **GET** - returns all the blogposts in the database
+-  `/post/{id}` - **GET** - returns data of the blogpost with the given id
+-  `/publicatePost/{id}` - **POST** - publicates the given blogpost
 
 ## Coupon related endpoints
 
