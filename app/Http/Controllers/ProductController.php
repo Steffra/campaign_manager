@@ -16,7 +16,7 @@ class ProductController extends Controller
 
     public function show(Product $product)
     {
-        return $product;
+        return $product->load('campaigns');
     }
 
     public function publicate(Request $request, Product $product)
